@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "GoogleSans";
+  src: url("https://fonts.gstatic.com/s/googlesans/v59/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2")
+    format("truetype");
+}
+
+* {
+  margin: 0;
+  font-family: "GoogleSans";
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
+    0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(
+      18% 28% at 18% 71%,
+      #610993ff 6%,
+      #073aff00 100%
+    ),
+    radial-gradient(42% 53% at 15% 94%, #361971f5 7%, #073aff00 100%),
+    radial-gradient(42% 53% at 34% 72%, #ed4ffff5 7%, #073aff00 100%),
+    radial-gradient(18% 28% at 35% 87%, #0b021df5 7%, #073aff00 100%),
+    radial-gradient(31% 43% at 7% 98%, #37156bff 24%, #073aff00 100%),
+    radial-gradient(21% 37% at 72% 23%, #610993ff 24%, #073aff00 100%),
+    radial-gradient(35% 56% at 91% 74%, #8a4ffff5 9%, #073aff00 100%),
+    radial-gradient(74% 86% at 67% 38%, #2b0545f5 24%, #073aff00 100%),
+    linear-gradient(125deg, #610993ff 1%, #4c00fcff 100%);
+  overflow-x: hidden;
+}
