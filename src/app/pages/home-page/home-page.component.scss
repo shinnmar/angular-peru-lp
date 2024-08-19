@@ -1,12 +1,99 @@
 .home {
+  background-color: rgba(0, 0, 0, 0.74);
   width: 100%;
-  height: 100%;
-  .logo {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .title {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 300px;
-    margin: 0 auto;
+    margin: 1rem 0;
+
+    img {
+      width: 150px;
+      margin: 0 1rem 0 0;
+      @media screen and (max-width: 765px) {
+        width: 180px;
+      }
+
+      @media screen and (max-width: 571px) {
+        width: 150px;
+      }
+
+      @media screen and (max-width: 490px) {
+        width: 120px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    position: relative;
+    color: transparent;
+    background: linear-gradient(
+      to right,
+      #e90464,
+      #f637e3,
+      #8514f5,
+      #5c44e4,
+      #f637e3,
+      #fe2857,
+      #5c44e4,
+      #f637e3,
+      #f11653
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 500%;
+    animation: color 9s linear infinite;
+
+    @media screen and (max-width: 992px) {
+      font-size: 5.3rem;
+    }
+
+    @media screen and (max-width: 765px) {
+      font-size: 5rem;
+      text-align: center;
+      line-height: 5.8rem;
+      letter-spacing: -3px;
+      width: 50%;
+      text-align: left;
+    }
+
+    @media screen and (max-width: 571px) {
+      font-size: 4rem;
+      line-height: 4.3rem;
+    }
+
+     @media screen and (max-width: 490px) {
+      font-size: 3.7rem;
+     }
+
+     @media screen and (max-width: 400px) {
+      font-size: 3.3rem;
+     }
+  }
+
+  @keyframes color {
+    from {
+      background-position: 0% 50%;
+    }
+
+    to {
+      background-position: 100% 50%;
+    }
+  }
+}
+
+.about-us, .what-we-do {
+  .content {
+    justify-content: center;
+    width: 70%;
+    height: 400px;
   }
 }

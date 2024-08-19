@@ -30,15 +30,29 @@ body {
       #610993ff 6%,
       #073aff00 100%
     ),
-    radial-gradient(42% 53% at 15% 94%, #361971f5 7%, #073aff00 100%),
-    radial-gradient(42% 53% at 34% 72%, #ed4ffff5 7%, #073aff00 100%),
+    radial-gradient(42% 53% at 15% 94%, #281058f5 7%, #073aff00 100%),
+    radial-gradient(42% 53% at 34% 72%, #6539ddf5 7%, #073aff00 100%),
     radial-gradient(18% 28% at 35% 87%, #0b021df5 7%, #073aff00 100%),
     radial-gradient(31% 43% at 7% 98%, #37156bff 24%, #073aff00 100%),
     radial-gradient(21% 37% at 72% 23%, #610993ff 24%, #073aff00 100%),
-    radial-gradient(35% 56% at 91% 74%, #8a4ffff5 9%, #073aff00 100%),
+    radial-gradient(35% 56% at 91% 74%, #240c56f5 9%, #073aff00 100%),
     radial-gradient(74% 86% at 67% 38%, #2b0545f5 24%, #073aff00 100%),
     linear-gradient(125deg, #610993ff 1%, #4c00fcff 100%);
   overflow-x: hidden;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h2, h3 {
+  margin: 0 0 3rem 0;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  margin: 0 0 1.5rem 0;
 }
 
 .container {
@@ -65,4 +79,15 @@ body {
   @media screen and (max-width: 576px) {
     max-width: 500px;
   }
+}
+
+section {
+  padding: 6rem 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
