@@ -1,13 +1,17 @@
 <header>
   <div class="container">
     <div class="content">
-      <nav>
+      <img class="logo-mobile" src="icons/logo_AngularPeru.svg" alt="logo header mobile">
+      <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
+        <span [ngClass]="{ 'hamburger-icon': !isMenuOpen, 'hamburger-icon-open': isMenuOpen }"></span>
+      </button>
+      <nav [ngClass]="{ 'nav-open': isMenuOpen }">
         <ul>
           <li><a href="#community">Comunidad</a></li>
           <li><a href="#events">Próximos Eventos</a></li>
           <li><a href="#join-us">¡Participa!</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#contact-us">Contáctanos</a></li>
+          <li><a href="mailto:angularcommunityperu@gmail.com" target="_blank">Contáctanos</a></li>
         </ul>
       </nav>
     </div>
