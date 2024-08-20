@@ -19,6 +19,7 @@ body {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
       #073aff00 100%
     ),
     radial-gradient(42% 53% at 15% 94%, #281058f5 7%, #073aff00 100%),
-    radial-gradient(42% 53% at 34% 72%, #6539ddf5 7%, #073aff00 100%),
+    radial-gradient(42% 53% at 34% 72%, #311779f5 7%, #073aff00 100%),
     radial-gradient(18% 28% at 35% 87%, #0b021df5 7%, #073aff00 100%),
     radial-gradient(31% 43% at 7% 98%, #37156bff 24%, #073aff00 100%),
     radial-gradient(21% 37% at 72% 23%, #610993ff 24%, #073aff00 100%),
@@ -45,7 +46,8 @@ h2 {
   font-size: 3rem;
 }
 
-h2, h3 {
+h2,
+h3 {
   margin: 0 0 3rem 0;
 }
 

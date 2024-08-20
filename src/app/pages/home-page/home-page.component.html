@@ -5,7 +5,7 @@
   </div>
 </section>
 
-<section class="about-us">
+<section class="about-us" id="community">
   <div class="container">
     <div class="content center">
       <article>
@@ -33,4 +33,33 @@
   </div>
 </section>
 
-<app-team [members]="members"></app-team>
+<section class="events" id="events">
+  <div class="container">
+    <div class="content center">
+      <article>
+        <h2>Nuestros Próximos Eventos</h2>
+        <div class="event-card">
+          <img class="thumb" src="icons/events_ngconf.jpg" alt="">
+          <a href="https://ngconf.angular-peru.com/" target="_blank">¡Quiero inscribirme!</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="join-us" id="join-us">
+  <div class="container">
+    <div class="content center">
+      <article>
+        <h2>Participa y Únete a la Comunidad</h2>
+        <p>Estamos localizados en Lima, pero buscamos llegar a todo el país por lo que realizamos eventos online como
+          Tech Talks,
+          Meets, Streamings para comentar y compartir updates de las tecnologías que más nos gustan, como Angular.</p>
+
+        <p>Sin embargo, nuestro contenido va orientado a la Programación y Desarrollo Web en general. 🚀✨</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<app-team [members]="members" id="team"></app-team>

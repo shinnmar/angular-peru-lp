@@ -1,7 +1,20 @@
-<footer>
-  <ul>
-    <a href="#">
-      <li>Código de conducta</li>
-    </a>
-  </ul>
+<footer class="footer">
+  <div class="container">
+    <div class="socialMedia">
+      <p class="label">Síguenos en</p>
+      @for(socialNetwork of socialNetworkList; track socialNetwork.name){
+      <a [href]="socialNetwork.link" target="_blank">
+        <img [src]="socialNetwork.icon" class="socialMediaItem" [alt]="socialNetwork.name + ' icon'" />
+      </a>
+      }
+    </div>
+    <div class="boxLink">
+      <a href="#">
+        <img src="icons/AngularPeru_logo.svg" class="logoPrimary" alt="Icon Angular Perú" />
+      </a>
+      <a class="boxLinkItem" routerLink="/code-of-conduct">Código de conducta</a>
+      <a class="boxLinkItem" href="mailto:angularcommunityperu@gmail.com" target="_blank">Contáctanos</a>
+      <img src="icons/icon_angular_white.svg" class="logoSecondary" alt="Icon Angular Perú" />
+    </div>
+  </div>
 </footer>

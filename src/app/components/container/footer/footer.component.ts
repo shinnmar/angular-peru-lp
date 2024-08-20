@@ -10,6 +10,11 @@ import { RouterLink } from '@angular/router';
 export class FooterComponent {
   socialNetworkList = [
     {
+      name: 'Youtube',
+      icon: 'icons/ico_youtube.svg',
+      link: 'https://www.youtube.com/@AngularCommunityPeru',
+    },
+    {
       name: 'Facebook',
       icon: 'icons/ico_facebook.svg',
       link: 'https://www.facebook.com/AngularPeruNG/?utm_source=landingNgConfPeru&utm_medium=section_footer&utm_campaign=landingNgConfPeru&utm_id=ngConfPeru',

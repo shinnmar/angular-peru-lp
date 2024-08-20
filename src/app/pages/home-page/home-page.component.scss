@@ -91,7 +91,9 @@
 }
 
 .about-us,
-.what-we-do {
+.what-we-do,
+.events,
+.join-us {
   .content {
     justify-content: center;
     width: 70%;
@@ -99,7 +101,32 @@
   }
 }
 
-.what-we-do {
+.what-we-do,
+.join-us {
   background-color: #000000;
 }
 
+.events {
+  padding: 8rem 0;
+  .event-card {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .thumb {
+      width: 100%;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 4.2);
+    }
+
+    a {
+      padding: 1rem 2rem;
+      margin: 2rem 0 0;
+      background-color: #5c44e4;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
