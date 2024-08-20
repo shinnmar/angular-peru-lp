@@ -10,7 +10,6 @@ import { TeamComponent } from '../../components/container/team/team.component';
   styleUrls: ['./home-page.component.scss'],
   imports: [FooterComponent, HeaderComponent, TeamComponent],
 })
-
 export class HomePageComponent {
   members = [
     {
@@ -26,6 +25,12 @@ export class HomePageComponent {
       linkedinUrl: 'https://linkedin.com/in/kevin',
     },
     {
+      name: 'Luis Eduardo Pérez',
+      role: 'Senior Frontend Developer',
+      imgSrc: '../icons/headshot_Luis_Eduardo.JPEG',
+      linkedinUrl: 'https://linkedin.com/in/luis',
+    },
+    {
       name: 'Shirley Ramos',
       role: 'Ssr Frontend Developer & UI designer',
       imgSrc: '../icons/headshot_ShirleyRamos.jpeg',
@@ -36,12 +41,6 @@ export class HomePageComponent {
       role: 'Senior Frontend Developer',
       imgSrc: '../icons/headshot_Betany_Gonzales.jpeg',
       linkedinUrl: 'https://linkedin.com/in/betany',
-    },
-    {
-      name: 'Luis Eduardo Pérez',
-      role: 'Senior Frontend Developer',
-      imgSrc: '../icons/headshot_Luis_Eduardo.JPEG',
-      linkedinUrl: 'https://linkedin.com/in/luis',
     },
   ];
 }

@@ -5,16 +5,14 @@
         <h2>Organizers</h2>
         <div class="members">
           <div class="member" *ngFor="let member of members">
-            <div class="info">
-              <img [src]="member.imgSrc" [alt]="member.name">
-              <span class="name">{{ member.name }}</span>
-              <span class="role">{{ member.role }}</span>
-            </div>
-            <div class="social-media">
-              <a [href]="member.linkedinUrl" target="_blank">
+            <article class="article">
+              <img class="picture" [src]="member.imgSrc" [alt]="member.name">
+              <a class="icon" [href]="member.linkedinUrl" target="_blank">
                 <img src="../icons/ico_linkedin.svg" alt="LinkedIn Icon">
               </a>
-            </div>
+            </article>
+            <span class="name">{{ member.name }}</span>
+            <span class="role">{{ member.role }}</span>
           </div>
         </div>
       </article>
