@@ -6,12 +6,17 @@
   .members {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .member {
       display: flex;
       flex-direction: column;
       margin: 0 0.5rem;
+
+      @media screen and (max-width: 768px) {
+        margin: 0.8rem 1rem;
+      }
 
       .article {
         position: relative;

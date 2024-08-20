@@ -73,7 +73,7 @@ header {
 
         a {
           text-decoration: none;
-          &:active,:visited, :focus {
+          &:hover, :past,:visited,:focus {
             font-weight: 400;
             letter-spacing: 0;
             position: relative;
