@@ -1,4 +1,3 @@
-// home-page.component.ts
 import { Component, OnInit } from '@angular/core';
 import { FooterComponent } from '../../components/container/footer/footer.component';
 import { HeaderComponent } from '../../components/container/header/header.component';
