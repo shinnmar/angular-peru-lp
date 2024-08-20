@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { FooterComponent } from '../../components/container/footer/footer.component';
 import { HeaderComponent } from '../../components/container/header/header.component';
 import { TeamComponent } from '../../components/container/team/team.component';
@@ -11,7 +11,6 @@ import { SmoothScrollService } from '../../smooth-scroll.service';
   styleUrls: ['./home-page.component.scss'],
   imports: [FooterComponent, HeaderComponent, TeamComponent],
 })
-
 export class HomePageComponent implements OnInit {
   members = [
     {
@@ -46,9 +45,32 @@ export class HomePageComponent implements OnInit {
     },
   ];
 
+  activeSection: string = '';
+
   constructor(private smoothScrollService: SmoothScrollService) {}
 
   ngOnInit(): void {
     this.smoothScrollService.initSmoothScroll();
+    this.updateActiveSectionOnScroll();
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(): void {
+    this.updateActiveSectionOnScroll();
+  }
+
+  private updateActiveSectionOnScroll(): void {
+    const sections = document.querySelectorAll('section');
+    let currentSection: string = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const sectionHeight = section.offsetHeight;
+      if (sectionTop <= window.innerHeight / 2 && sectionTop + sectionHeight > window.innerHeight / 2) {
+        currentSection = section.getAttribute('id') || '';
+      }
+    });
+
+    this.activeSection = currentSection;
   }
 }
