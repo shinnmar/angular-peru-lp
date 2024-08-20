@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FooterComponent } from '../../components/container/footer/footer.component';
 import { HeaderComponent } from '../../components/container/header/header.component';
 import { TeamComponent } from '../../components/container/team/team.component';
+import { SmoothScrollService } from '../../smooth-scroll.service';
 
 @Component({
   selector: 'home-page',
@@ -10,7 +11,8 @@ import { TeamComponent } from '../../components/container/team/team.component';
   styleUrls: ['./home-page.component.scss'],
   imports: [FooterComponent, HeaderComponent, TeamComponent],
 })
-export class HomePageComponent {
+
+export class HomePageComponent implements OnInit {
   members = [
     {
       name: 'Jimy Dolores',
@@ -43,4 +45,10 @@ export class HomePageComponent {
       linkedinUrl: 'https://linkedin.com/in/betania-gonzalez',
     },
   ];
+
+  constructor(private smoothScrollService: SmoothScrollService) {}
+
+  ngOnInit(): void {
+    this.smoothScrollService.initSmoothScroll();
+  }
 }
