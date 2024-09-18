@@ -34,15 +34,9 @@ export class HomePageComponent implements OnInit {
     },
     {
       name: 'Shirley Ramos',
-      role: 'Ssr Frontend Developer & UI designer',
+      role: 'Senior Frontend Developer & UI designer',
       imgSrc: '../icons/headshot_ShirleyRamos.jpeg',
       linkedinUrl: 'https://linkedin.com/in/shirleyramos',
-    },
-    {
-      name: 'Betany González',
-      role: 'Senior Frontend Developer',
-      imgSrc: '../icons/headshot_BetanyGonzalez.jpeg',
-      linkedinUrl: 'https://linkedin.com/in/betania-gonzalez',
     },
   ];
 
